@@ -2,6 +2,8 @@ import './App.css';
 import Greet from  './components/Greet'
 import GreetClass from './components/GreetClass'
 import MessageClass from './components/MessageClass'
+import CounterClass from './components/CounterClass'
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,8 @@ function App() {
       <GreetClass firstName='Ben' secondName='James'></GreetClass>
       <GreetClass firstName='Alex' secondName='Lewis'></GreetClass>
       <GreetClass firstName='Adam' secondName='Kemp'></GreetClass> */}
-      <MessageClass></MessageClass>
+      {/* <MessageClass></MessageClass> */}
+      <CounterClass></CounterClass>
     </div>
   );
 }
