@@ -1,9 +1,9 @@
 
-const Greet = (props) => {
+const Greet = ({firstName, secondName, children}) => {
     return (
     <div>
-      <h1>Hello {props.firstName} {props.secondName}!</h1>
-      <p>{props.children}</p>
+      <h1>Hello {firstName} {secondName}!</h1>
+      {children}
     </div>
     )
 }
