@@ -3,6 +3,7 @@ import GreetClass from './components/GreetClass'
 import MessageClass from './components/MessageClass'
 import CounterClass from './components/CounterClass'
 import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <GreetClass firstName='Adam' secondName='Kemp'></GreetClass> */}
       {/* <MessageClass></MessageClass> */}
       {/* <CounterClass></CounterClass> */}
-      <FunctionClick></FunctionClick>
+      {/* <FunctionClick></FunctionClick> */}
+      <ClassClick></ClassClick>
     </div>
   );
 }
