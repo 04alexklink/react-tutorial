@@ -1,5 +1,6 @@
 
-const Greet = ({firstName, secondName, children}) => {
+const Greet = (props) => {
+  const {firstName, secondName, children} = props;
     return (
     <div>
       <h1>Hello {firstName} {secondName}!</h1>
