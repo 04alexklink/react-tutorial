@@ -1,7 +1,10 @@
 
-const Greet = () => {
+const Greet = (props) => {
     return (
-    <h1>Hello Alex Klink</h1>
+    <div>
+      <h1>Hello {props.firstName} {props.secondName}!</h1>
+      <p>{props.children}</p>
+    </div>
     )
 }
 
