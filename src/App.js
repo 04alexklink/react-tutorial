@@ -10,6 +10,7 @@ import UserGreeting from './components/UserGreeting'
 import NamesList from './components/NameList'
 import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline'
+import Form from './components/Form'
 function App() {
   return (
     <div className="App">
@@ -32,7 +33,8 @@ function App() {
       {/* <UserGreeting></UserGreeting> */}
       {/* <NamesList></NamesList> */}
       {/* <Stylesheet primary={true}></Stylesheet> */}
-      <Inline></Inline>
+      {/* <Inline></Inline> */}
+      <Form></Form>
     </div>
   );
 }
