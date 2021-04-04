@@ -2,18 +2,30 @@ import React from 'react'
 
 function NameList() {
 
-  const names = ['Alex','Adam','Ben']
-    const nameList = names.map(name => 
-        <h1>{name}</h1>
-      )
-    return (
-        <div>
-          {/* {names.map(name => 
-            <h1>{name}</h1>
-          )} */}
-          {nameList}
-        </div>
-    )
+  const people = [
+    {
+      id: 1,
+      name: 'Alex',
+      sport: 'Tennis'
+    },
+    {
+      id: 2,
+      name: 'Adam',
+      sport: 'none'
+    },
+    {
+      id: 3,
+      name: 'Ben',
+      sport: 'Surfing'
+    }
+  ]
+  const peopleList = people.map(person => (
+   <h1>
+     I am {person.name}. I like {person.sport}
+   </h1>
+  ))
+
+  return <div>{peopleList}</div>
 }
 
 export default NameList
