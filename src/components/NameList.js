@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person'
 
 function NameList() {
 
@@ -19,11 +20,7 @@ function NameList() {
       sport: 'Surfing'
     }
   ]
-  const peopleList = people.map(person => (
-   <h1>
-     I am {person.name}. I like {person.sport}
-   </h1>
-  ))
+  const peopleList = people.map(person => <Person key={person.id} name={person.name} sport={person.sport}/> )
 
   return <div>{peopleList}</div>
 }
