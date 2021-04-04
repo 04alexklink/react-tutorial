@@ -5,7 +5,7 @@ class UserGreeting extends Component {
         super(props)
     
         this.state = {
-          isLoggedIn: false  
+          isLoggedIn: true  
         }
     }
     
@@ -26,12 +26,15 @@ class UserGreeting extends Component {
         // } else {
         //   return <h1>Welcome Guest</h1>
         // }
-
-        return this.state.isLoggedIn? (
-          <h1>Welcome Alex</h1>
-         ) : (
-          <h1>Welcome Guest</h1>
-        )
+// ternary operator appraoch to conditional rendering
+        // return this.state.isLoggedIn? (
+        //   <h1>Welcome Alex</h1>
+        //  ) : (
+        //   <h1>Welcome Guest</h1>
+        // )
+// short circuit operator for conditional rendering where you either render something
+// or nothing. This is a specific case of the ternary operator approach above
+  return this.state.isLoggedIn && <h1>Welcome Alex</h1>
     }
 }
 
