@@ -19,6 +19,8 @@ import RefsDemo from './components/RefsDemo'
 import FocusInput from './components/FocusInput'
 import Hero from './components/Hero'
 import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter2 from './components/ClickCounter2'
+import HoverCounter2 from './components/HoverCounter2'
 import ParentForHoverAndClick from './components/ParentForHoverAndClick'
 function App() {
   return (
@@ -56,9 +58,9 @@ function App() {
       <ErrorBoundary>
       <Hero heroName={'Joker'}></Hero>
       </ErrorBoundary> */}
-      {/* <ClickCounter></ClickCounter>
-      <HoverCounter></HoverCounter> */}
-      <ParentForHoverAndClick/>
+      <ClickCounter2></ClickCounter2>
+      <HoverCounter2></HoverCounter2>
+      {/* <ParentForHoverAndClick/> */}
     </div>
   );
 }
