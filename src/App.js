@@ -17,6 +17,8 @@ import Table from './components/Table'
 import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo'
 import FocusInput from './components/FocusInput'
+import Hero from './components/Hero'
+import ErrorBoundary from './components/ErrorBoundary'
 function App() {
   return (
     <div className="App">
@@ -46,7 +48,13 @@ function App() {
       {/* <Table></Table> */}
       {/* <ParentComp></ParentComp> */}
       {/* <RefsDemo></RefsDemo> */}
-      <FocusInput></FocusInput>
+      {/* <FocusInput></FocusInput> */}
+      <ErrorBoundary>
+      <Hero heroName={'Batman'}></Hero>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName={'Joker'}></Hero>
+      </ErrorBoundary>
     </div>
   );
 }
