@@ -12,4 +12,4 @@ class HoverCounter2 extends Component {
     }
 }
 
-export default withCounter(HoverCounter2)
+export default withCounter(HoverCounter2, 10)

@@ -22,6 +22,8 @@ import ErrorBoundary from './components/ErrorBoundary'
 import ClickCounter2 from './components/ClickCounter2'
 import HoverCounter2 from './components/HoverCounter2'
 import ParentForHoverAndClick from './components/ParentForHoverAndClick'
+import ComponentC from './components/ComponentC'
+import {UserProvider} from './components/userContext'
 function App() {
   return (
     <div className="App">
@@ -58,9 +60,12 @@ function App() {
       <ErrorBoundary>
       <Hero heroName={'Joker'}></Hero>
       </ErrorBoundary> */}
-      <ClickCounter2></ClickCounter2>
-      <HoverCounter2></HoverCounter2>
+      {/* <ClickCounter2 name={'Alex'}></ClickCounter2>
+      <HoverCounter2></HoverCounter2> */}
       {/* <ParentForHoverAndClick/> */}
+      <UserProvider value='Alex K'>
+      <ComponentC/>
+      </UserProvider>
     </div>
   );
 }
